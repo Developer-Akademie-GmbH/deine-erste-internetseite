@@ -2,6 +2,9 @@
 <head>
   <title>Mein Restaurant</title>
   <style>
+     html {
+ 	scroll-behavior: smooth;
+     }
      .myBody {
        margin: 0px;
        font-family: 'Open Sans', sans-serif;
@@ -9,7 +12,7 @@
      
      .atf-image {
         width: 100%;
-        height: 500px;
+        height: 800px;
         object-fit: cover;
      }    
    
@@ -23,7 +26,7 @@
       top: 0;
       left: 0;
       right: 0;
-      height: 500px;
+      height: 800px;
       color: white;
       display: flex;
       justify-content: center;
@@ -71,7 +74,7 @@
 
    .menu{
      position: absolute;
-     top: 16px;
+     top: 32px;
      right: 100px;
    }
 
@@ -85,6 +88,16 @@
 
    .menu a:hover {
       color: #EDBB0A;    
+   }
+
+   .order-btn {
+      color: black !important;
+      background-color: #EDBB0A;
+      padding: 16px;
+   }
+
+   .order-btn:hover {
+       background-color: #e8c755;
    }
   </style>
 
@@ -104,10 +117,10 @@
 </div>
 
 <div class="menu">
-  <a href="#">RESERVIEREN</a>
-  <a href="#">BESTELL ONLINE</a>
-  <a href="#">KONTAKT</a>
-  <a href="#">ANFAHRT</a>
+  <a href="#contact">RESERVIEREN</a>
+  <a class="order-btn" href="#">BESTELL ONLINE</a>
+  <a href="#contact">KONTAKT</a>
+  <a href="#address">ANFAHRT</a>
 </div>
 
 <div class="container">
@@ -129,7 +142,7 @@
   </table>
 </div>
 
-<div class="container">
+<div class="container" id="address">
   <h2 class="pacifico">Anfahrt</h2>
   Unsere Adresse lautet: Rosenheimer Str. 139, 81379 München
 
@@ -169,7 +182,7 @@
   Jetzt die Tageskarte <a href="./downloads/tageskarte.pdf" target="_blank">herunterladen</a>.
 </div>
 
-<div class="container">
+<div class="container" id="contact">
   <h2 class="pacifico">Kontakt</h2>
   So kannst du uns kontaktieren: <br>
   Telefon: <a href="tel:0157213898">0157213898</a><br>
