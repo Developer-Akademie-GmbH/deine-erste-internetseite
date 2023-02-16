@@ -17,16 +17,19 @@
         font-family: 'Pacifico', cursive;
      }
 
-     .main-container {
-          padding-left: 100px;
-	  background-color: rgba(0, 0, 0, 0.4);
-	  position: absolute;
-	  top: 0;
-	  left: 0;
-          right: 0;
-	  height: 500px;
-	  color: white;
-     }
+    .main-container {
+      background-color: rgba(0, 0, 0, 0.4);
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 500px;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
 
     .container {
         padding-left: 100px;
@@ -42,6 +45,8 @@
      background-color: rgba(35,38,41);
      color: white;
      padding: 100px;
+     display: flex;
+     justify-content: space-between;
    }
 
    .footer-link {
@@ -141,9 +146,13 @@
 <br>
 <br>
 <div class="container footer">
-  (c) Copyright 2023 Developer Akademie GmbH<br>
-  <a href="impressum.html" class="footer-link">Impressum</a> 
-| <a href="datenschutz.html" class="footer-link">Datenschutz</a>
+  <div>
+    (c) Copyright 2023 Developer Akademie GmbH<br>
+  </div>  
+  <div>
+    <a href="impressum.html" class="footer-link">Impressum</a> 
+  | <a href="datenschutz.html" class="footer-link">Datenschutz</a>
+  </div>
 </div>
 
 </body>
