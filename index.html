@@ -39,9 +39,21 @@
    }
 
    .footer {
-     background-color: rgb(35,38,41);
+     background-color: rgba(35,38,41);
      color: white;
      padding: 100px;
+   }
+
+   .footer-link {
+      color: white;
+      text-decoration: none;
+      cursor: pointer;
+   }
+
+  .footer-link:hover {
+     text-decoration: underline;
+     color: orange;
+
    }
   </style>
 
@@ -130,7 +142,8 @@
 <br>
 <div class="container footer">
   (c) Copyright 2023 Developer Akademie GmbH<br>
-  <a href="impressum.html">Impressum</a> | <a href="datenschutz.html">Datenschutz</a>
+  <a href="impressum.html" class="footer-link">Impressum</a> 
+| <a href="datenschutz.html" class="footer-link">Datenschutz</a>
 </div>
 
 </body>
