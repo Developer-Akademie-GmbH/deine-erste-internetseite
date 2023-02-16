@@ -27,6 +27,22 @@
 	  height: 500px;
 	  color: white;
      }
+
+    .container {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+
+   .googlemaps {
+      height: 350px;
+      width: 100%;
+   }
+
+   .footer {
+     background-color: rgb(35,38,41);
+     color: white;
+     padding: 100px;
+   }
   </style>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -44,68 +60,78 @@
   Hier findest du einen Überblick über unsere Speisen.
 </div>
 
+<div class="container">
+  <h2 class="pacifico">Unsere Öffnungszeiten</h2>
 
-<h2 class="pacifico">Unsere Öffnungszeiten</h2>
+  <table>
+    <tr>
+      <td>Mo - Fr:</td>
+      <td>12:00 - 23:00 Uhr</td>
+    </tr>
+    <tr>
+      <td>Sa:</td>
+      <td>11:00 - 24:00 Uhr</td>
+    </tr>
+    <tr>
+      <td>So:</td>
+      <td>11:00 - 24:00 Uhr</td>
+    </tr>
+  </table>
+</div>
 
-<table>
-  <tr>
-    <td>Mo - Fr:</td>
-    <td>12:00 - 23:00 Uhr</td>
-  </tr>
-  <tr>
-    <td>Sa:</td>
-    <td>11:00 - 24:00 Uhr</td>
-  </tr>
-  <tr>
-    <td>So:</td>
-    <td>11:00 - 24:00 Uhr</td>
-  </tr>
-</table>
+<div class="container">
+  <h2 class="pacifico">Anfahrt</h2>
+  Unsere Adresse lautet: Rosenheimer Str. 139, 81379 München
 
-<h2 class="pacifico">Anfahrt</h2>
-Unsere Adresse lautet: Rosenheimer Str. 139, 81379 München
-
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2663.2737698640117!2d11.59980031617!3d48.12424357922236!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479ddf8378e729b3%3A0x597089178dfbfc81!2sRosenheimer%20Str.%20139%2C%2081671%20M%C3%BCnchen!5e0!3m2!1sde!2sde!4v1676540909801!5m2!1sde!2sde" width="900" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  <iframe class="googlemaps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2663.2737698640117!2d11.59980031617!3d48.12424357922236!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479ddf8378e729b3%3A0x597089178dfbfc81!2sRosenheimer%20Str.%20139%2C%2081671%20M%C3%BCnchen!5e0!3m2!1sde!2sde!4v1676540909801!5m2!1sde!2sde" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
 
 
-<h2 class="pacifico">Tageskarte</h2>
+<div class="container">
+  <h2 class="pacifico">Tageskarte</h2>
 
-<table>
-  <tr>
-    <td>1</td>
-    <td>Pizza</td>
-    <td>8,99 €</td>
-  </tr>
+  <table>
+    <tr>
+      <td>1</td>
+      <td>Pizza</td>
+      <td>8,99 €</td>
+    </tr>
 
-  <tr>
-    <td>2</td>
-    <td>Pilzpfanne</td>
-    <td>11,99 €</td>
-  </tr>
+   <tr>
+      <td>2</td>
+      <td>Pilzpfanne</td>
+      <td>11,99 €</td>
+    </tr>
 
-  <tr>
-    <td>3</td>
-    <td>Bauernsalat</td>
-    <td>5,99 €</td>
-  </tr>
+    <tr>
+      <td>3</td>
+      <td>Bauernsalat</td>
+      <td>5,99 €</td>
+    </tr>
 
-  <tr>
-    <td>4</td>
-    <td>Mousse au chacolat</td>
-    <td>7,99 €</td>
-  </tr>
+    <tr>
+      <td>4</td>
+      <td>Mousse au chacolat</td>
+      <td>7,99 €</td>
+    </tr>
 
-</table>
-Jetzt die Tageskarte <a href="./downloads/tageskarte.pdf" target="_blank">herunterladen</a>.
+  </table>
+  Jetzt die Tageskarte <a href="./downloads/tageskarte.pdf" target="_blank">herunterladen</a>.
+</div>
 
-<h2 class="pacifico">Kontakt</h2>
-So kannst du uns kontaktieren: <br>
-Telefon: <a href="tel:0157213898">0157213898</a><br>
-E-Mail: <a href="mailto:info@developerakademie.com">info@developerakademie.com</a>
+<div class="container">
+  <h2 class="pacifico">Kontakt</h2>
+  So kannst du uns kontaktieren: <br>
+  Telefon: <a href="tel:0157213898">0157213898</a><br>
+  E-Mail: <a href="mailto:info@developerakademie.com">info@developerakademie.com</a>
+</div>
 
 <br>
 <br>
-(c) Copyright 2023 Developer Akademie GmbH<br>
-<a href="impressum.html">Impressum</a> | <a href="datenschutz.html">Datenschutz</a>
+<div class="container footer">
+  (c) Copyright 2023 Developer Akademie GmbH<br>
+  <a href="impressum.html">Impressum</a> | <a href="datenschutz.html">Datenschutz</a>
+</div>
+
 </body>
 </html>
