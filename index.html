@@ -5,7 +5,8 @@
      html {
  	scroll-behavior: smooth;
      }
-     .myBody {
+
+     body {
        margin: 0px;
        font-family: 'Open Sans', sans-serif;
      }
@@ -20,7 +21,7 @@
         font-family: 'Pacifico', cursive;
      }
 
-    .main-container {
+    #main-container {
       background-color: rgba(0, 0, 0, 0.4);
       position: absolute;
       top: 0;
@@ -66,7 +67,7 @@
 
    }
 
-   .headline {
+   h1 {
      color: #EDBB0A;
      font-size: 54px;
      filter: drop-shadow(2px 6px 8px rgba(0,0,0,0.5));
@@ -99,6 +100,15 @@
    .order-btn:hover {
        background-color: #e8c755;
    }
+
+   a {
+      color: #EDBB0A;      
+      text-decoration: none;
+   }
+
+   a:hover {
+      text-decoration: underline;
+   }
   </style>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -107,12 +117,12 @@
   <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
 </head>
 
-<body class="myBody">
+<body>
 
 <img class="atf-image" src="./img/aot.jpg">
 
-<div class="main-container">
-  <h1 class="headline">Herzlich willkommen</h1>
+<div id="main-container">
+  <h1>Herzlich willkommen</h1>
   Hier findest du einen Überblick über unsere Speisen.
 </div>
 
